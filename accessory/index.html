@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Accessory</title>
+        <link rel="stylesheet" type="text/css" href="/css/global.css">
+        <script>
+            function addItem(){
+                var accessory = document.getElementById("accessory");
+                var selectedAccessory = accessory.options[accessory.selectedIndex].text;
+                var selectedAccessoryValue = accessory.options[accessory.selectedIndex].value;
+                var inputAmount = document.getElementById("amount-input");
+                var amount = inputAmount.value;
+                var accessoryTable = document.getElementById("accessory-table")
+                var price = parseFloat(selectedAccessoryValue);
+                var totalPrice = document.getElementById("total-price");
+                var productTable = document.getElementById("product-list");
+
+                
+                var row = productTable.insertRow(-1);
+                var accessoryCell = row.insertCell(0);
+                var amountCell = row.insertCell(1);
+                var priceCell = row.insertCell(2);
+                accessoryCell.innerHTML = selectedAccessory;
+                amountCell.innerHTML = amount;
+                priceCell.innerHTML = "$" + (price * amount).toFixed(2);
+
+                var newTotalPrice = parseFloat(totalPrice.innerHTML.substring(1)) + (price * amount);
+                totalPrice.innerHTML = "$" + newTotalPrice.toFixed(2);
+
+                var rate = 0.07;
+                var totalVat = newTotalPrice * rate;
+                document.getElementById("totalVat").textContent = totalVat.toFixed(2);
+
+                var totalAmount = newTotalPrice + totalVat;
+                document.getElementById("totalAmount").textContent = totalAmount.toFixed(2);
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Car Accessories</h1>
+        <h3>Add Accessory</h3>
+        <select id="accessory">
+            <option value="10">Car Cover</option>
+            <option value="20">Seat Cover</option>
+            <option value="30">Phone Holder</option>
+        </select>
+        <input type="number" id="amount-input" min="1" value="1"/>
+        <button class="add-button" onclick="addItem()">Add</button>
+        <h2>Product List</h2>
+        <table id="product-list">
+            <tr>
+                <th>Product</th>
+                <th>Amount</th>
+                <th>Price</th>
+            </tr>
+        </table>
+        <label for="totalVat">VAT amount : </label>
+        <span id="totalVat">0.00</span>
+        <br>
+        <label for="totalAmount">Total amount : </label>
+        <span id="totalAmount">0.00</span>
+        <h2>Total Price : <span id="total-price">$0.00</span></h2>
+    </body>
+</html>
