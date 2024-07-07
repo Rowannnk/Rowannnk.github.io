@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Advanced Bootstrap Design</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            color: #555; 
+        }
+
+        .navbar-brand {
+            font-weight: bold;
+            color: #f8d568 !important;
+        }
+
+        .navbar-dark .navbar-nav .nav-link {
+            color: #f8d568;
+        }
+
+        .carousel-caption {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 1rem;
+            border-radius: 10px;
+            color: #f8d568; 
+        }
+
+        .card-hover {
+            transition: transform 0.3s;
+            border: none;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .card-hover:hover {
+            transform: scale(1.05);
+        }
+
+        .featurette-divider {
+            margin: 4rem 0;
+        }
+
+        .featurette-heading {
+            font-size: 2.5rem;
+        }
+
+        .feature-carousel .carousel-item {
+            text-align: center;
+        }
+
+        .feature-carousel img {
+            margin: auto;
+        }
+
+        .footer {
+            background-color: #343a40;
+            color: #fff;
+            padding: 2rem 0;
+        }
+
+        .footer a {
+            color: #f8d568;
+        }
+
+        .image-container {
+          height: 60vh;
+          overflow: hidden;
+        }
+
+        .image-container img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+
+        .jumbotron h1, .jumbotron p {
+          color: #fff; 
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <a class="navbar-brand" href="#">Carousel</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Disabled</a>
+                </li>
+            </ul>
+            <form class="form-inline mt-2 mt-md-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+</header>
+
+<div class="jumbotron text-center image-container position-relative d-flex justify-content-center align-items-center">
+  <img src="girl1.jpeg" alt="Bootstrap Image" class="img-fluid" />
+  <div class="position-absolute text-white text-center">
+    <h1>My First Bootstrap Page</h1>
+    <p>Resize this responsive page to see the effect!</p>
+  </div>
+</div>
+
+<div class="container marketing mt-5">
+    <div class="row">
+        <div class="col-lg-4">
+            <div class="card card-hover bg-light">
+                <img class="card-img-top" src="tiger.jpeg" alt="Generic placeholder image">
+                <div class="card-body text-center">
+                    <h2>Tiger</h2>
+                    <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                    <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="card card-hover bg-light">
+                <img class="card-img-top" src="tiger1.jpeg" alt="Generic placeholder image">
+                <div class="card-body text-center">
+                    <h2>Tiger Bird</h2>
+                    <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula .</p>
+                    <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="card card-hover bg-light">
+                <img class="card-img-top" src="tiger.jpeg" alt="Generic placeholder image">
+                <div class="card-body text-center">
+                    <h2>Tiger</h2>
+                    <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                    <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div id="featureCarousel" class="carousel slide feature-carousel" data-ride="carousel" data-interval="2000">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="row">
+                    <div class="col-md-4">
+                        <img class="rounded-circle" src="girl1.jpeg" alt="Feature image" width="140" height="140">
+                        <h4 class="featurette-heading small">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h4>
+                        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. </p>
+                    </div>
+                    <div class="col-md-4">
+                        <img class="rounded-circle" src="girl2.jpeg" alt="Feature image" width="140" height="140">
+                        <h4 class="featurette-heading small">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h4>
+                        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. </p>
+                    </div>
+                    <div class="col-md-4">
+                        <img class="rounded-circle" src="girl3.jpeg" alt="Feature image" width="140" height="140">
+                        <h4 class="featurette-heading small">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h4>
+                        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="row">
+                    <div class="col-md-4">
+                        <img class="rounded-circle" src="girl1.jpeg" alt="Feature image" width="140" height="140">
+                        <h4 class="featurette-heading small">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h4>
+                        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. </p>
+                    </div>
+                    <div class="col-md-4">
+                        <img class="rounded-circle" src="girl2.jpeg" alt="Feature image" width="140" height="140">
+                        <h4 class="featurette-heading small">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h4>
+                        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. </p>
+                    </div>
+                    <div class="col-md-4">
+                        <img class="rounded-circle" src="girl3.jpeg" alt="Feature image" width="140" height="140">
+                        <h4 class="featurette-heading small">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h4>
+                        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="footer text-center">
+  <div class="container">
+      <p class="float-right"><a href="#">Back to top</a></p>
+      <p>&copy; 2024 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+  </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $('.accordion .collapse').on('shown.bs.collapse', function () {
+            $(this).prev().find('.btn-link').addClass('active');
+        });
+
+        $('.accordion .collapse').on('hidden.bs.collapse', function () {
+            $(this).prev().find('.btn-link').removeClass('active');
+        });
+    });
+</script>
+</body>
+</html>
