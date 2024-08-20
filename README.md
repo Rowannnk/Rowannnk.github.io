@@ -35,10 +35,12 @@ This project is a web application designed to provide insightful data and analys
 <img width="1430" alt="Screenshot 2024-08-20 at 23 34 05" src="https://github.com/user-attachments/assets/00cc8c59-018a-449b-b9da-ecac7e9d1962">
 <img width="1428" alt="Screenshot 2024-08-20 at 23 34 50" src="https://github.com/user-attachments/assets/8c89ad2f-7e8e-45b8-bae5-5e3c45c92122">
 
+
 ## Highlight Page
 <img width="1429" alt="Screenshot 2024-08-20 at 23 35 06" src="https://github.com/user-attachments/assets/8ac13b53-9f88-497e-8dd9-579c65bfc494">
 <i><b>If there's no Highlighted cars</b></i>
 <img width="1425" alt="Screenshot 2024-08-20 at 23 35 39" src="https://github.com/user-attachments/assets/bc982eba-5ed2-4dd4-bfa0-02625d4934de">
+
 
 ## Dashboard Page
 ### Car Data Table
