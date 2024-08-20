@@ -37,7 +37,7 @@ This project is a web application designed to provide insightful data and analys
 
 ## Highlight Page
 <img width="1429" alt="Screenshot 2024-08-20 at 23 35 06" src="https://github.com/user-attachments/assets/8ac13b53-9f88-497e-8dd9-579c65bfc494">
-If there's no Highlighted cars
+*__If there's no Highlighted cars__*
 <img width="1425" alt="Screenshot 2024-08-20 at 23 35 39" src="https://github.com/user-attachments/assets/bc982eba-5ed2-4dd4-bfa0-02625d4934de">
 
 ## Dashboard Page
@@ -60,10 +60,7 @@ If there's no Highlighted cars
 ### Footer
 <img width="1440" alt="Screenshot 2024-08-20 at 23 39 32" src="https://github.com/user-attachments/assets/e044fdc9-2cf4-437f-8430-1651b38f9c53">
 
-Footer by HTET AUNG SHINE -
-Yesterday 11:57 PM
-HTET AUNG SHINE -
-
+# How to get the app
 ### Install Node JS
 Refer to https://nodejs.org/en/ to install nodejs
 
