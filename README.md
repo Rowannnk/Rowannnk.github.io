@@ -21,7 +21,7 @@ npm install -g create-react-app
 ```
 
 ## This is deployed in 
-https://github.com/HtetAungShine6/htetaungshine6.github.io?classId=c35471db-1c9d-4969-8637-eb2e89a9ad23&assignmentId=6ea00087-a8e6-45fc-a14b-1ff30598b292&submissionId=f1eb8cb2-91ae-21ab-d888-7224c520f44b
+[https://github.com/HtetAungShine6/htetaungshine6.github.io?classId=c35471db-1c9d-4969-8637-eb2e89a9ad23&assignmentId=6ea00087-a8e6-45fc-a14b-1ff30598b292&submissionId=f1eb8cb2-91ae-21ab-d888-7224c520f44b](https://github.com/Rowannnk/Rowannnk.github.io.git)
 
 ## Cloning and Running Applocation in local
 ```bash
