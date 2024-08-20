@@ -9,7 +9,7 @@ By Min Khant Kyaw & Htet Aung Shine
 https://rowannnk.github.io/Project1/
 
 ## Project Description
-This project is a web application designed to provide insightful data and analysis on various car models. Built using React for the front end and this project allows users to explore different car models, and brands with detailed reports on car specifications.
+This project is a web application designed to provide insightful data and analysis on various car models. Built using React for the front end and this project offers to explore different car models, and brands with detailed reports on car specifications.
 
 ### Key Features
 - Interactive Dashboard: Visualize car performance metrics through interactive graphs and charts.
