@@ -9,6 +9,14 @@ By Min Khant Kyaw & Htet Aung Shine
 https://rowannnk.github.io/Project1/
 
 ## Project Description
+This project is a web application designed to provide insightful data and analysis on various car models. Built using React for the front end and this project allows users to explore different car models, and brands with detailed reports on car specifications.
+
+### Key Features
+- Interactive Dashboard: Visualize car performance metrics through interactive graphs and charts.
+- Detailed Reports: Access comprehensive reports on car specifications.
+- Search and Filter: Easily search and filter cars based on criteria like make, model, year, and price.
+- Favorites Management: Can add or remove favorite cars, keeping track of models they are interested in.
+- Data Visualization: The application presents data in various forms, including graphs, tables, and other interactive elements, to provide a clear understanding of car analytics.
 
 ### Install Node JS
 Refer to https://nodejs.org/en/ to install nodejs
